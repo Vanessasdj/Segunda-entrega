@@ -1,0 +1,134 @@
+/* início do código main da página reservas */
+
+.reserva-main {
+    background-image: url(/imagens/reserva_bg.jpg) !important;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    font-size: 11pt;
+}
+
+.reserva-main main {
+    background-color: black;
+    margin: 7.5% auto;
+    width: 40%;
+}
+
+.reserva-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.reserva-logo img {
+    width: 200px;
+}
+
+.reserva-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.reserva-formulario p {
+    color: white;
+    margin: 0 10%;
+}
+
+.reserva-formulario-campos {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    width: 80%;
+}
+
+.reserva-formulario-campos label {
+    color: white;
+    margin: 10px 0 5px 0;
+    padding: 0 0 0 5px;
+}
+
+.reserva-formulario-campos input {
+    height: 25px;
+    border-radius: 5px;
+}
+
+.reserva-formulario-campos select {
+    height: 25px;
+    border-radius: 5px;
+}
+
+.reserva-agora-botao {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.reserva-agora-botao > input {
+    width:250px;
+    height:50px;
+    padding:5px;
+    background-color: orange;
+    border: solid 2px black;
+    border-radius: 5px;
+    color: black;
+    font-weight:500;
+    font-size: 14pt;
+}
+
+/* design responsivo da pagina reservas começa aqui */
+
+@media (max-width: 480px) {
+    .reserva-main {
+        font-size: 9pt;
+    }
+
+    .reserva-main main {
+        width: 90%;
+    }
+    
+    .reserva-logo img {
+        width: 150px;
+    }
+
+    .reserva-formulario p {
+        margin: 0 10%;
+    }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+    .reserva-main {
+        font-size: 9pt;
+    }
+
+    .reserva-main main {
+        width: 90%;
+    }
+    
+    .reserva-logo img {
+        width: 150px;
+    }
+
+    .reserva-formulario p {
+        margin: 0 10%;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .reserva-main {
+        font-size: 9pt;
+    }
+
+    .reserva-main main {
+        width: 90%;
+    }
+    
+    .reserva-logo img {
+        width: 150px;
+    }
+
+    .reserva-formulario p {
+        margin: 0 10%;
+    }
+}

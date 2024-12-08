@@ -1,0 +1,234 @@
+/* início do código do header */
+
+.menu-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: black;
+}
+
+.menu-logo {
+    width: 10%;
+    height: 5%;
+}
+
+.menu-logo a {
+    height: inherit;
+}
+
+.menu-logo img {
+    width: 150px;
+    height: inherit;
+}
+
+.menu-links {
+    height: 5%;
+    width: 90%;
+}
+
+.menu-links-lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10% 0 0;
+    padding: 0;
+}
+
+.menu-links-item {
+    width: auto;
+    padding: 5px;
+    margin: 20px;
+    list-style-type: none;
+    color: orange;
+    font-size: 14pt;
+}
+
+.menu-links-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-links-item a:hover {
+    color: white;
+}
+
+/* design responsivo do header começa aqui */
+
+@media (max-width: 480px) {
+    .menu-logo {
+        width: auto;
+    }
+
+    .menu-logo img {
+        width: 75px;
+        height: inherit;
+    }
+    
+    .menu-links {
+        height: 5%;
+        width: 90%;
+    }
+    
+    .menu-links-lista {
+        margin: 0;
+    }
+    
+    .menu-links-item {
+        margin: 0;
+        font-size: 11pt;
+    }
+
+    .menu-links-item:first-child {
+        display: none;
+    }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+    .menu-logo img {
+        width: 100px;
+    }
+    
+    .menu-links-item {
+        margin: 0;
+        font-size: 12pt;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    
+    .menu-links-item {
+        margin: 1%;
+        font-size: 12pt;
+    }
+}
+
+/* fim do código do header */
+
+/* início do código main da página index */
+
+.botao-reserva {
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+    width:200px;
+    height:70px;
+    padding:5px;
+    background-color: orange;
+    margin:-15px 0 0 -100px; 
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.botao-reserva a {
+    text-decoration: none;
+    color: black;
+    font-weight:500;
+    font-size: 15pt;
+}
+
+.botao-reserva a:hover {
+    text-transform: uppercase;
+}
+
+/* fim do código main da página index */
+
+
+/* início do código do footer */
+
+.footer-principal {
+    width: 100%;
+    background-color: black;
+}
+
+.footer-links {
+    display: flex;
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links img {
+    width: 30px;
+    margin: 30px 10px;
+}
+
+.footer-links div {
+    font-size: 8pt;
+    color: white;
+    margin: 0 20px;
+}
+
+.footer-links p {
+    margin: 0;
+    padding: 0;
+}
+
+/* fim do código do footer */
+
+
+
+
+.carousel {
+    position: relative;
+    width: 100%; /* Ocupa a largura total do contêiner */
+    max-width:1200px; /* Limite máximo para grandes telas */
+    margin:auto;
+    overflow:hidden; /* Esconde partes fora do contêiner */
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    width: 110%; /* Cada imagem ocupa 100% da largura disponível */
+    height: auto; /* Mantém proporções */
+    object-fit: cover; /* Ajusta o conteúdo sem distorção */
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+  }
+  
+  .carousel-btn.prev {
+    left: 15px;
+  }
+  
+  .carousel-btn.next {
+    right: 15px;
+  }
+  
+  .carousel-btn:hover {
+    background-color: orange;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .carousel {
+      max-width: 100%;
+    }
+  
+    .carousel-btn {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+
+
+  

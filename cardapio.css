@@ -1,0 +1,177 @@
+/* início do código main da página cardapio */
+
+.cardapio-titulo  {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    color: orange;
+
+
+}
+
+.fundo-cardapio {
+    background-color: black;
+}
+
+
+.cardapio-container {
+    display: flex;
+    justify-content:center;
+    flex-wrap: nowrap;
+    align-items: start;
+    width: 80%;
+    margin: 5% 10%;
+}
+
+.item {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+.item img{
+    width:40%;
+}
+
+.item div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item h3 {
+    color: white;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+.item p {
+    color: white;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+/* design responsivo da pagina unidades começa aqui */
+
+@media (max-width: 480px) {
+    .cardapio-titulo  {
+        margin: 20px 0 30px 0;
+    }
+
+    .cardapio-titulo h2 {
+        font-size: 20pt;
+    }
+
+    .cardapio-titulo h3 {
+        font-size: 16pt;
+    }
+
+    .cardapio-titulo h3 {
+        font-size: 13pt;
+    }
+    
+    .cardapio-container {
+        flex-direction: column;
+        margin: 0 10%;
+    }
+    
+    .item {
+        margin: 0 0 10px 0;
+        width: auto;
+    }
+    
+    .item img{
+        width:50%;
+    }
+
+    .item h3 {
+        padding: 0 15px;
+    }
+    
+    .item p {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+    .cardapio-titulo  {
+        margin: 20px 0 30px 0;
+    }
+
+    .cardapio-titulo h2 {
+        font-size: 24pt;
+    }
+
+    .cardapio-titulo h3 {
+        font-size: 18pt;
+    }
+
+    .cardapio-titulo h3 {
+        font-size: 15pt;
+    }
+    
+    .cardapio-container {
+        flex-direction: column;
+        width: auto;
+        margin: 0 15%;
+    }
+    
+    .item {
+        margin: 0 0 10px 0;
+        width: auto;
+    }
+    
+    .item img{
+        width:50%;
+    }
+
+    .item h3 {
+        padding: 0 15px;
+    }
+    
+    .item p {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .cardapio-titulo  {
+        margin: 30px 0;
+    } 
+    
+    .cardapio-container {
+        width: 100%;
+        margin: 5% 0%;
+        align-items: baseline;
+    }
+    
+    .item {
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        width: 30%;
+    }
+
+    .item img {
+        width: 50%;
+    }
+    
+    .item h3 {
+        font-size: 14pt;
+        margin: 0 0 15px 0;
+        padding: 0 5px;
+    }
+    
+    .item p {
+        font-size: 10pt;
+        padding: 0 10px;
+    }
+}
+
+/* fim do código main da página cardapio */

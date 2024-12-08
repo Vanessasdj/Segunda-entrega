@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas | Sushi Slogan Here</title>
+    <link rel="stylesheet" href="reservas.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body class="reserva-main">
+    <script src="scriptsReservas.js"></script>
+    <header>
+        <nav class="menu-nav">
+            <div class="menu-logo">
+                <a href="/"><img src="imagens/logotipo.png" alt=""></a>
+            </div>
+            <div class="menu-links">
+                <ul class="menu-links-lista">
+                    <li class="menu-links-item"><a href="/">Home</a></li>
+                    <li class="menu-links-item"><a href="/unidades.html">Unidades</a></li>
+                    <li class="menu-links-item"><a href="/cardapio.html">Cardápio</a></li>
+                    <li class="menu-links-item"><a href="/contato.html">Contato</a></li>
+                    <li class="menu-links-item"><a href="sobre.html">Sobre nós</a></li>
+                    <li class="menu-links-item"><a href="reservas.html">Reservas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="reserva-logo">
+            <a href="index.html"><img src="imagens/logotipo.png" alt=""></a>
+        </div>
+        <div class="reserva-formulario">
+            <p>PREENCHA O FORMULÁRIO DE RESERVA E SELECIONE O HORÁRIO DE CHEGADA</p>
+            <form id="reserva-form" class="reserva-formulario-campos">
+                <label for="nome">QUAL SEU NOME?</label>
+                <input type="text" name="nome" id="nome" />
+                
+                <label for="email">QUAL SEU E-MAIL?</label>
+                <input type="email" name="email" id="email" />
+                
+                <label for="tel">QUAL SEU WHATSAPP?</label>
+                <input type="tel" name="tel" id="tel" />
+                
+                <label for="unidades">ESCOLHA SUA UNIDADE:</label>
+                <select name="unidades" id="unidades">
+                    <option value="Vilaboim">Praça Vilaboim, 00 - Higienopólis - São Paulo - SP</option>
+                    <option value="VeigaFilho">Rua Veiga Filho, 000 - Higienopólis - São Paulo - SP</option>
+                    <option value="Mirandas">Rua Mirandas, 00 - Vila Clementino - São Paulo - SP</option>
+                </select>
+                
+                <label for="time">HORÁRIO PREVISTO PARA CHEGADA:</label>
+                <input type="time" name="time" id="time" />
+                
+                <label for="date">SELECIONE A DATA DA SUA RESERVA:</label>
+                <input type="date" name="date" id="date" />
+                
+                <div class="reserva-agora-botao">
+                    <input class="reserva-botao" type="submit" value="RESERVAR AGORA!" />
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer-principal">
+        <div class="footer-links">
+            <a href="https://www.facebook.com"><img src="imagens/facebook.png" alt="rede social"></a>
+            <a href="https://www.instagram.com"><img src="imagens/instagram (1).png" alt="rede social"></a>
+            <a href="https://www.twitter.com"><img src="imagens/twitter.png" alt="rede social"></a>
+            <div>
+                <p>© Slogan Here 2024 </p>
+                <p>CNPJ 33.000.000/0001-00</p>
+            </div>
+        </div>
+    </footer>
+<!--
+    <script>
+        // Elementos do formulário
+        const form = document.getElementById('reserva-form');
+        const nomeInput = document.getElementById('nome');
+        const emailInput = document.getElementById('email');
+        const telInput = document.getElementById('tel');
+
+        // Atributos de elementos
+        const { value: nome } = nomeInput;
+
+        // Combinação de valores padrões com os dos usuários
+        const reservaDefault = {
+            nome: "Visitante",
+            email: "email@example.com",
+            tel: "(00) 00000-0000"
+        };
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const nomeReserva = nomeInput.value || reservaDefault.nome;
+            const emailReserva = emailInput.value || reservaDefault.email;
+            const telReserva = telInput.value || reservaDefault.tel;
+            
+            if (nomeReserva && emailReserva && telReserva) {
+                console.log({
+                    ...reservaDefault,
+                    nome: nomeReserva,
+                    email: emailReserva,
+                    tel: telReserva
+                });
+                alert(`Reserva feita para ${nomeReserva}.`);
+            } else {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+            }
+        });
+    </script>
+-->
+</body>
+</html>

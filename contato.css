@@ -1,0 +1,188 @@
+/* início do código main da página contato */
+
+.imagemdefundo {
+    background-image: url(/imagens/contato.jpg);
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    font-size: 11pt;
+}
+
+.imagemdefundo main {
+    background-color: black;
+    margin: 7.5% auto;
+    width: 40%;
+    height: auto;
+    padding: 80px 0 40px 0;
+}
+
+
+.listadecontato {
+    width: 70%;
+    margin: auto;
+}
+
+.listadecontato li {
+    color: white;
+    margin: 20px 0;
+    list-style-type: disc;
+}
+
+
+.trabalheconosco{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    margin-top:180px;
+    padding-left: 0px;
+
+
+    
+}
+
+.trabalheconosco li {
+
+    margin-left: 30px ;
+    margin-right: 30px;
+}
+
+/* design responsivo da pagina contato começa aqui */
+
+@media (max-width: 480px) {
+    .imagemdefundo {
+        background-size: auto 100%;
+        background-position-x: 45%;
+    }
+    
+    .imagemdefundo main {
+        margin: 7.5% 5%;
+        width: 90%;
+        padding: 15px 0;
+        height: auto;
+    }
+    
+    .listadecontato {
+        width: 90%;
+        padding: 0 0 0 70px;
+    }
+
+    .listadecontato li {
+        margin: 50px 0;
+    }
+    
+    .listadecontato h5 {
+        font-size: 11pt;
+    }
+    
+    .trabalheconosco {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        margin: 15px 15px 15px;
+    }
+
+    .trabalheconosco li {
+        width: 50%;
+        margin: 0;
+    }
+
+    .trabalheconosco h6 {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+    .imagemdefundo {
+        background-size: auto 100%;
+        background-position-x: 45%;
+    }
+    
+    .imagemdefundo main {
+        margin: 7.5% 5%;
+        width: 90%;
+        padding: 15px 0;
+        height: auto;
+    }
+    
+    .listadecontato {
+        width: 90%;
+        padding: 0 0 0 100px;
+    }
+
+    .listadecontato li {
+        margin: 50px 0;
+    }
+    
+    .listadecontato h5 {
+        font-size: 11pt;
+    }
+    
+    .trabalheconosco {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        margin: 15px 15px 15px;
+    }
+
+    .trabalheconosco li {
+        width: 50%;
+        margin: 0;
+    }
+
+    .trabalheconosco h6 {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .imagemdefundo {
+        background-size: auto 100%;
+        background-position-x: 45%;
+    }
+    
+    .imagemdefundo main {
+        margin: 7.5% 5%;
+        width: 90%;
+        padding: 15px 0;
+        height: auto;
+    }
+    
+    .listadecontato {
+        width: 90%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .listadecontato li {
+        margin: 25px 0;
+    }
+    
+    .listadecontato h5 {
+        font-size: 11pt;
+    }
+    
+    .trabalheconosco {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        margin: 15px 15px 15px;
+    }
+
+    .trabalheconosco li {
+        width: 50%;
+        margin: 0;
+    }
+
+    .trabalheconosco h6 {
+        font-size: 10pt;
+    }
+}
+
+/* fim do código main da página contato */
